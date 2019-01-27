@@ -140,12 +140,13 @@ var wordsFind = [
   'disobedience'
 ];
 
+
 function doesWordExist(array, word){
   if (array.length === 0) {return false;}
   else if (array.includes(word)){
     return true;
   }
-  else{
+  else {
     return false;
   }
 }
@@ -164,6 +165,7 @@ var wordsCount = [
   'disobedience',
   'matter'
 ];
+
 
 function howManyTimes(myArray, word1){
   if (myArray.length === 0) {return false;}
@@ -203,7 +205,7 @@ var matrix = [
 
 function greatestProduct(array){
   var product = 0;
-  for (j = 0; j < (array.length - 3); j++){ 
+  for (j = 0; j < (array.length); j++){ 
     for (i = 0; i < (array.length - 3); i++){
       var multrow = (array[j][i] * array[j][i+1] * array[j][i+2] * array[j][i+3]);
       if (multrow > product){
@@ -212,7 +214,7 @@ function greatestProduct(array){
     }
   }
 
-  for (x = 0; x < (array.length - 3); x++) {
+  for (x = 0; x < (array.length); x++) {
     for (z = 0; z < (array.length - 3); z++) {
       var multcol = (array[z][x] * array[z+1][x] * array[z+2][x] * array[z+3][x]);
       if (multcol > product){
